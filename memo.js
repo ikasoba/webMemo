@@ -14,6 +14,7 @@ var webMemo = new class{
 		memolist.innerHTML=res
 		localStorage.setItem( "memos",JSON.stringify( this.memos ) )
 		localStorage.setItem( "current",JSON.stringify( this.current ) )
+		document.title=`webMemo - ${this.current}`
 	}
 	save(){
 		var key=document.querySelector("#input_MemoList").value
