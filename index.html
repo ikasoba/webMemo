@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>webMemo - 無題</title>
+	<link rel="stylesheet" type="text/css" href="memo.css">
+	<script type="text/javascript" src="memo.js"></script>
+	<link rel="shortcut icon" href="./img/icon.png">
+	<link rel="icon" href="./img/icon.png">
+	<link rel="apple-touch-icon" href="./img/icon.png">
+</head>
+<body>
+	<div  id="memo_box_wrap">
+		<div id="memo_box" class="visible" contenteditable="true">
+			
+		</div>
+	</div>
+	<div  id="MemoManager">
+		<input autocomplete="on" list="memolist" id="input_MemoList">
+		<datalist id="memolist">
+		</datalist>
+		<button onclick="webMemo.delete()">削除</button>
+		<button onclick="webMemo.load()">読み込み</button>
+		<button onclick="webMemo.save()">保存</button>
+	</div>
+	<script>
+		webMemo.onevent()
+	</script>
+</body>
+</html>

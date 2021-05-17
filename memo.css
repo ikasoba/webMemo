@@ -1,0 +1,45 @@
+body {
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100vh;
+	background:#99ddff;
+}
+html {
+	background:#373737;
+}
+div {
+	margin:0;
+	outline:none;
+}
+#background {
+	display:flex;
+	flex-direction: column;
+	background:#99ddff;
+	height:100%;
+}
+#memo_box_wrap {
+	overflow-y:scroll;
+	background:#fff;
+	color:black;
+	padding:0.5rem;
+	height:90%;
+}
+#memo_box {
+	overflow-wrap: break-word;
+	width:100%;
+	height:100%;
+	display:block;
+}
+#saveWindow {
+	height:1rem;
+}
+.visible {
+	display:initial;
+}
+#margin {
+	margin:0.5rem;
+}
+#MemoManager {
+	margin:0.5rem;
+}
